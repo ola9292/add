@@ -35,3 +35,9 @@ function calc(){
  document.querySelector('#result').innerHTML = calculate;
 
 }
+var reset = document.querySelector('#reset');
+reset.addEventListener('click',function(){
+    document.querySelector('#value1').value = "";
+    document.querySelector('#value2').value = "";
+    document.querySelector('#result').innerHTML = "";
+})
